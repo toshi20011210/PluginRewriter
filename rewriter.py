@@ -9,4 +9,4 @@ for i in range(0, len(tempArray)):
 for i in range(0, len(finalArray)): 
     if finalArray[i] != 'webdriver-manager' and finalArray[i] != 'selenium' and finalArray[i] != 'selenium-wire' and finalArray[i] != 'tk':
         with open('output.txt', 'a') as f:
-            f.write('--exclude-module ' + finalArray[i] + '\n')
+            f.write('--exclude-module ' + finalArray[i] + ' ')
